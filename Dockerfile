@@ -1,13 +1,14 @@
-FROM golang:1.20 as builder
+FROM golang:1.21 AS builder
 
 WORKDIR /go/src/employee-api
 
 COPY go.mod go.mod
-COPY go.sum go.sum
+COPY go.sum go.sum  
 
 RUN go mod download
 COPY client/ client/
 COPY config/ config/
+COPY docs/ docs/ 
 COPY middleware/ middleware/
 COPY model/ model/
 COPY routes/ routes/
@@ -21,7 +22,7 @@ LABEL authors="Opstree Solution" \
       version="v0.1.0"
 
 WORKDIR /
-COPY employee-api .
+COPY --from=builder /go/src/employee-api/employee-api .
 USER 65532:65532
 
 ENTRYPOINT ["/employee-api"]

@@ -1,6 +1,7 @@
 package main
 import (
-        "os"
+        "fmt"
+        "os"   // Add this for os package
         "time"
         docs "employee-api/docs"
         "github.com/gin-contrib/cors"
@@ -30,22 +31,22 @@ func init() {
 // @BasePath /api/v1
 // @schemes http
 func main() {
-    allowedOrigins := os.Getenv("ALLOWED_ORIGINS")
-    if allowedOrigins == "" {
-         allowedOrigins = "http://localhost:3000"  // fallback for local dev
-     }
+        allowedOrigins := os.Getenv("ALLOWED_ORIGINS")
+        if allowedOrigins == "" {
+             allowedOrigins = "http://localhost:3000"  // fallback for local dev
+         }
 
-     origins := strings.Split(allowedOrigins, ",")
-    //router := gin.Default()
-    // CORS Middleware
-    router.Use(cors.New(cors.Config{
-            AllowOrigins:     origins,  //[]string{"http://18.143.135.71:3000"},
-            AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
-            AllowHeaders:     []string{"Origin", "Content-Type", "Accept", "Authorization"},
-            ExposeHeaders:    []string{"Content-Length"},
-            AllowCredentials: true,
-            MaxAge:           12 * time.Hour,
-    }))
+         origins := strings.Split(allowedOrigins, ",")
+        //router := gin.Default()
+        // CORS Middleware
+        router.Use(cors.New(cors.Config{
+                AllowOrigins:     origins,  //[]string{"http://18.143.135.71:3000"},
+                AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+                AllowHeaders:     []string{"Origin", "Content-Type", "Accept", "Authorization"},
+                ExposeHeaders:    []string{"Content-Length"},
+                AllowCredentials: true,
+                MaxAge:           12 * time.Hour,
+        }))
         // router.GET("/api/v1/employee/search/all", func(c *gin.Context) {
         //      c.JSON(200, gin.H{"message": "Success"})
         // })
@@ -59,7 +60,30 @@ func main() {
         v1 := router.Group("/api/v1")
         docs.SwaggerInfo.BasePath = "/api/v1/employee"
         routes.CreateRouterForEmployee(v1)
-        url := ginSwagger.URL("http://18.143.135.71:8081/swagger/doc.json")
-        router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler, url))
-        router.Run(":8080")
+
+    // Read host and port from ENV
+    host := os.Getenv("APP_HOST")
+    port := os.Getenv("APP_PORT")
+    if port == "" {
+        port = "8080" // default if not set
+    }
+    if host == "" {
+        host = "0.0.0.0"
+    }
+
+    // Construct Swagger URL using env values
+    swaggerHost := host
+    if swaggerHost == "" || swaggerHost == "0.0.0.0" {
+        swaggerHost = "localhost" // Use your host machine's IP
+    }
+    swaggerURL := fmt.Sprintf("http://%s:%s/swagger/doc.json", swaggerHost, port)
+
+    url := ginSwagger.URL(swaggerURL)
+    router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler, url))
+
+    router.Run(":" + port)
+
 }
+
+
+docker run -dt -p 8080:8080 --name employee-api your-image-name
