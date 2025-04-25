@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="./static/employee-api-logo.svg" height="280" width="280">
 </p>

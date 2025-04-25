@@ -1,0 +1,858 @@
+    1  ipconfig 
+    2  ifconfig 
+    3  docker images
+    4  docker buil -t employee-api:v1 -f api/employee/Dockerfile api/employee
+    5  docker build -t employee-api:v1 -f api/employee/Dockerfile api/employee
+    6  docker rmi employee-api:v1
+    7  docker build -t employee-api:v1 -f api/employee/Dockerfile api/employee
+    8  docker run -dt -p 8080:8080 -e APP_HOST=10.0.7.120 --name employee-api-container employee-api:v1 
+    9  docker ps -a
+   10  docker rm -f e5c39e670cb6
+   11  docker run -dt -p 8080:8080 -e APP_HOST=10.0.7.120 --name employee-api-container employee-api:v1 
+   12  docker ps -a
+   13  docker logs
+   14  docker logs 12654
+   15  ip addr show
+   16  docker run -dt -p 8080:8080  --name employee-api-contai employee-api:v1 
+   17  docker ps -a
+   18  ddocker container prune
+   19  docker container prune
+   20  docker ps -a
+   21  docker stop b15c13a418fc
+   22  docker container prune
+   23  docker run -dt -p 8080:8080 -e APP_HOST=10.0.7.120 --name employee-api-container employee-api
+   24  docker ps -a
+   25  docker container prune
+   26  docker images prune
+   27  docker image prune
+   28  docker images
+   29  docker rmi $(docker images)
+   30  docker images
+   31  docker build -t employee-api -f api/employee/Dockerfile api/employee
+   32  docker run -dt -p 8080:8080 employee-api
+   33  docker -ps -a\
+   34  docker ps -a
+   35  docker run -dt -p 8080:8080 -e APP_PORT=8080 -e APP_HOST=0.0.0.0 employee-api --name aayush
+   36  docker ps -a
+   37  docker stop bf07c9ee618e
+   38  docker prune
+   39  docker container  prune
+   40  docker ps -a
+   41  docker rm -f 3ed3585b4ae0
+   42  docker run -dt -p 8080:8080 -e APP_PORT=8080 -e APP_HOST=0.0.0.0 employee-api
+   43  docker ps -a
+   44  docker build -t employee-api:v1 -f api/employee/Dockerfile api/employee
+   45  go get github.com/joho/godotenv
+   46  sudo apt  install golang-go  
+   47  go get github.com/joho/godotenv
+   48  go mod init employee-api
+   49  go get github.com/joho/godotenv
+   50  docker build -t employee-api:v1 -f api/employee/Dockerfile api/employee
+   51  go mod download github.com/joho/godotenv
+   52  docker build -t employee-api:v1 -f api/employee/Dockerfile api/employee
+   53  docker run -dt -p 8080:8080 mployee-api:v1
+   54  docker run -dt -p 8080:8080 employee-api:v1
+   55  docker rm -f $(docker ps -a)
+   56  docker ps -a
+   57  docker run -dt -p 8080:8080 employee-api:v1
+   58  docker rm -f ec7c67b
+   59  docker rmi $(docker ps -a)
+   60  docker rmi $(docker image)
+   61  docker rmi $(docker images)
+   62  docker build -t employee-api -f api/employee/Dockerfile api/employee
+   63  docker run -dt -p 8080:8080 -e APP_PORT=8080 -e APP_HOST=0.0.0.0 employee-api
+   64  docker rm -f eea3a
+   65  docker run -dt -p 8080:8080 --name employee employee-api 
+   66  docker run -dt -p 8080:8080 -e APP_PORT=8082  employee-api
+   67  docker ps -a
+   68  docker rm -f f724f32fe435
+   69  docker rm -f 3571f0a01117
+   70  docker run -dt -p 8080:8080 -e APP_PORT=8082  employee-api
+   71  docker ps -a
+   72  docker run -dt -p 8080:8080 --name employee employee-api 
+   73  docker rm -f $(docker ps -a)
+   74  docker build -t employee-api:v2 -f api/employee/Dockerfile api/employee
+   75  ls
+   76  docker build -t employee-api:v2 -f api/employee/Dockerfile api/employee
+   77  docker rm -f $(docker ps -a)
+   78  docker run -dt -p 8080:8080 --name employee employee-api:v2 
+   79  docker ps -a
+   80  docker rm -f 8f81281
+   81  docker rmi employee-api:v2
+   82  docker images
+   83  docker rmi employee-api
+   84  docker build -t employee-api:v1 -f api/employee/Dockerfile api/employee
+   85  docker run -dt -p 8080:8080 --name employee employee-api:v1
+   86  docker run -dt -p 8083:8080 --name employee employee-api:v1
+   87  docker run -dt -p 8080:8083 --name employee employee-api:v1
+   88  docker ps -a
+   89  cd api/
+   90  ls
+   91  cd employee/
+   92  ls
+   93  git add .
+   94  git status
+   95  git commit -m "update dockerfile and main,go file"
+   96  git push
+   97  curl ip.me
+   98  cd
+   99  kubectl 
+  100  clear
+  101  kubectl get pods
+  102  kubectl get nods
+  103  kubectl get nodes
+  104  kubectl describe node ip-192-168-0-110.us-east-2.compute.internal | grep Taint
+  105  kubectl get nodes
+  106  kubectl describe node ip-192-168-0-29.us-east-2.compute.internal | grep Taint
+  107  git clone 
+  108  git clone https://github.com/buildpiper-impl-kt/employee.git
+  109  cd ..
+  110  git clone https://github.com/aayushverma19/Install-Packages.git
+  111  cd Install-Packages/
+  112  ls
+  113  cd bash_function/
+  114  ls
+  115  sudo bash main.sh
+  116  cd
+  117  docker ps -a
+  118  sudo usermod -aG docker ubuntu
+  119  docker ps -a
+  120  newgrp docker
+  121  kubectl get nodes --show-labels
+  122  kubectl get node
+  123  kubectl get node -o wide
+  124  kubectl describe node ip-192-168-0-110.us-east-2.compute.internal
+  125  docker ps -a
+  126  kubectl get nodes
+  127  docker rm -f 1bc8394c668b
+  128  kubectl create namespace employee
+  129  kubectl get ns
+  130  kubectl apply -f pod.yml 
+  131  kubectl get pods
+  132  kubectl get pod
+  133  kubectl get pod -n employee
+  134  docker login -u aayush808
+  135  docker tag employee-api:v1 aayush808/employee-api:v3
+  136  docker push aayush808/employee-api:v3
+  137  kubectl apply -f pod.yml 
+  138  kubectl get -n employee pods
+  139  kubectl delete -f pod.yml 
+  140  kubectl apply -f pod.yml 
+  141  kubectl get -n employee deployment
+  142  kubectl get -n employee pods
+  143  kubectl get -n employee pods -o wide
+  144  kubectl get -n employee deployment -o wide
+  145  kubectl expose pod employee-5d958f854c-l9k6w   --port=8080   --target-port=8080   --name=employee-service   --namespace=employee   --type=LoadBalancer
+  146  kubectl get svc
+  147  kubectl get svc -o wide
+  148  kubectl get svc -n employee
+  149  kubectl expose pod employee-5d958f854c-l9k6w   --port=80   --target-port=8080   --name=employee-service2   --namespace=employee   --type=LoadBalancer
+  150  kubectl get svc -n employee
+  151  kubectl expose pod employee-5d958f854c-l9k6w   --port=8080   --target-port=80   --name=employee-service3   --namespace=employee   --type=LoadBalancer
+  152  kubectl get svc -n employee
+  153  kubectl logs employee-5d958f854c-l9k6w -c employee -n employee
+  154  kubectl get svc -n employee
+  155  kubectl delete svc employee-service2 -n employee
+  156  kubectl delete svc employee-service3 -n employee
+  157  kubectl delete svc employee-service -n employee
+  158  kubectl delete -f pod.yml 
+  159  kubectl apply -f deploymentEmployee.yml 
+  160  kubectl delete svc employee-service -n employee
+  161  kubectl apply -f deploymentEmployee.yml 
+  162  kubectl get svc -n employee
+  163  kubectl apply -f deploymentEmployee.yml 
+  164  kubectl get svc -n employee 
+  165  apiVersion: v1
+  166  kind: Service
+  167  metadata:
+  168  spec:
+  169  kubectl apply -f deploymentEmployee.yml 
+  170  kubectl get svc -n employee
+  171  pwd
+  172  ls
+  173  bash demo.sh 
+  174  bash demo.sh /home/ubuntu/Install-Packages
+  175  ls
+  176  rm -rf Install-Packages_20250422040321.zip 
+  177  bash demo.sh /home/ubunt/Install-Packages
+  178  docker build -t archive_image .
+  179  docker run archive_image:latest /home/ubuntu/Install-Packages
+  180  docker run -v /home/ubuntu:/host-home archive_image:latest /host-home/Install-Packages
+  181  docker image
+  182  docker images
+  183  docker rmi archive_image
+  184  docker rmi -f archive_image
+  185  docker ps -a
+  186  docker rm -f 3852cb10df84
+  187  docker rm -f 73229
+  188  docker images
+  189  docker run -e FILE_PATH="/host-home/Install-Packages" -v /home/ubuntu:/host-home archive_image:latest
+  190  docker build -t archive .
+  191  docker run -e FILE_PATH="/host-home/Install-Packages" -v /home/ubuntu:/host-home archive_image:latest
+  192  docker run -e FILE_PATH="/host-home/Install-Packages" -v /home/ubuntu:/host-home archive:latest
+  193  docker run -e FILE_PATH="/home/ubuntu/Install-Packages" -v /home/ubuntu:/host-home archive:latest
+  194  docker ps -a
+  195  docker logs ubuntu@ip-10-0-7-120:~$ docker run -e FILE_PATH="/host-home/Install-Packages" -v /home/ubuntu:/host-home archive:latest
+  196  exec /app/demo.sh: no such file or directory
+  197  cd archive/
+  198  ls
+  199  docker logs 3d630b940d7b
+  200  docker run -it archive:latest /bin/sh
+  201  docker rmi -f archive:latest
+  202  docker build -t archive:latest .
+  203  docker run -e FILE_PATH="/host-home/Install-Packages" -v /home/ubuntu:/host-home archive:latest
+  204  docker rmi -f archive:latest
+  205  docker build -t archive:latest .
+  206  docker run -v /home/ubuntu:/host-home archive:latest /host-home/Install-Packages
+  207  ls
+  208  pwd 
+  209  docker run -it -v /home/ubuntu:/host-home archive:latest /bin/sh
+  210  docker run -v /home/ubuntu:/host-home archive:latest /host-home//Install-Packages
+  211  docker run -v /home/ubuntu:/host-home archive:latest /host-home/Install-Packages
+  212  ls -l /home/ubuntu/Install-Packages
+  213  docker rmi -f archive:latest 
+  214  docker build -t archive .
+  215  docker run -v /home/ubuntu:/host-home archive:latest /host-home/Install-Packages
+  216  ls
+  217  docker ps -a
+  218  docker rm -f $(docker ps -a)
+  219  docker rmf $(docker ps -a)
+  220  docker ps -a
+  221  docker rm 1bb33c4c0680
+  222  docker rm  $(docker ps -a)
+  223  docker rm -f $(docker ps -aq)
+  224  docker run -v /home/ubuntu:/host-home archive:latest /host-home/Install-Packages
+  225  ls
+  226  cd Install-Packages/
+  227  ls
+  228  cd ..
+  229  docker ps -a
+  230  docker logs docker run -v /home/ubuntu:/host-home archive:latest /host-home/Install-Packages
+  231  tar: Removing leading `/' from member names
+  232  /host-home/Install-Packages/
+  233  /host-home/Install-Packages/bash_function/
+  234  /host-home/Install-Packages/bash_function/main.sh
+  235  /host-home/Install-Packages/bash_function/Install.sh
+  236  /host-home/Install-Packages/.git/
+  237  /host-home/Install-Packages/.git/hooks/
+  238  /host-home/Install-Packages/.git/hooks/commit-msg.sample
+  239  /host-home/Install-Packages/.git/hooks/applypatch-msg.sample
+  240  /host-home/Install-Packages/.git/hooks/sendemail-validate.sample
+  241  /host-home/Install-Packages/.git/hooks/pre-merge-commit.sample
+  242  /host-home/Install-Packages/.git/hooks/post-update.sample
+  243  /host-home/Install-Packages/.git/hooks/pre-rebase.sample
+  244  /host-home/Install-Packages/.git/hooks/prepare-commit-msg.sample
+  245  /host-home/Install-Packages/.git/hooks/pre-applypatch.sample
+  246  /host-home/Install-Packages/.git/hooks/pre-commit.sample
+  247  /host-home/Install-Packages/.git/hooks/update.sample
+  248  /host-home/Install-Packages/.git/hooks/fsmonitor-watchman.sample
+  249  /host-home/Install-Packages/.git/hooks/pre-push.sample
+  250  /host-home/Install-Packages/.git/hooks/pre-receive.sample
+  251  /host-home/Install-Packages/.git/hooks/push-to-checkout.sample
+  252  /host-home/Install-Packages/.git/description
+  253  /host-home/Install-Packages/.git/index
+  254  /host-home/Install-Packages/.git/packed-refs
+  255  /host-home/Install-Packages/.git/HEAD
+  256  /host-home/Install-Packages/.git/branches/
+  257  /host-home/Install-Packages/.git/info/
+  258  /host-home/Install-Packages/.git/info/exclude
+  259  /host-home/Install-Packages/.git/logs/
+  260  /host-home/Install-Packages/.git/logs/HEAD
+  261  /host-home/Install-Packages/.git/logs/refs/
+  262  /host-home/Install-Packages/.git/logs/refs/heads/
+  263  /host-home/Install-Packages/.git/logs/refs/heads/main
+  264  /host-home/Install-Packages/.git/logs/refs/remotes/
+  265  /host-home/Install-Packages/.git/logs/refs/remotes/origin/
+  266  /host-home/Install-Packages/.git/logs/refs/remotes/origin/HEAD
+  267  /host-home/Install-Packages/.git/refs/
+  268  /host-home/Install-Packages/.git/refs/heads/
+  269  /host-home/Install-Packages/.git/refs/heads/main
+  270  /host-home/Install-Packages/.git/refs/tags/
+  271  /host-home/Install-Packages/.git/refs/remotes/
+  272  /host-home/Install-Packages/.git/refs/remotes/origin/
+  273  /host-home/Install-Packages/.git/refs/remotes/origin/HEAD
+  274  /host-home/Install-Packages/.git/objects/
+  275  /host-home/Install-Packages/.git/objects/pack/
+  276  /host-home/Install-Packages/.git/objects/pack/pack-ac346c64f61988e7f8e89dc659a5d1e593921ef4.rev
+  277  /host-home/Install-Packages/.git/objects/pack/pack-ac346c64f61988e7f8e89dc659a5d1e593921ef4.idx
+  278  /host-home/Install-Packages/.git/objects/pack/pack-ac346c64f61988e7f8e89dc659a5d1e593921ef4.pack
+  279  /host-home/Install-Packages/.git/objects/info/
+  280  /host-home/Install-Packages/.git/config
+  281  /host-home/Install-Packages/install.sh
+  282  /host-home/Install-Packages/README.md
+  283  File successfully zipped as: 
+  284  docker logs cdeee0c33702
+  285  docker ps -a
+  286  docker exec -it cdeee0c33702 ls /host-home/Install-Packages
+  287  docker start cdeee0c33702
+  288  ls
+  289  docker ps -a
+  290  docker logs cdeee0c33702
+  291  mkdir archive
+  292  chmod 777 archive/
+  293  docker run -v /home/ubuntu/archive:/host-home archive:latest /host-home/Install-Packages
+  294  ls
+  295  docker run -v /home/ubuntu/archive:/host-home/archive archive:latest /host-home/Install-Packages
+  296  cp -r Install-Packages/ archive/
+  297  docker run -v /home/ubuntu/archive:/host-home/archive archive:latest /host-home/Install-Packages
+  298  docker run -v /home/ubuntu/archive:/host-home archive:latest /host-home/Install-Packages
+  299  cd archive/
+  300  ls
+  301  cd ..
+  302  ls
+  303  docker ps -a
+  304  cd archive/
+  305  rm -rf Install-Packages/
+  306  cd ..
+  307  docker run -v /home/ubuntu/archive:/host-home archive:latest /host-home/Install-Packages
+  308  cp -r Install-Packages/ archive/
+  309  docker run -v /home/ubuntu/archive:/host-home archive:latest /host-home/Install-Packages
+  310  docker run -it -v /home/ubuntu/archive:/host-home archive:latest /bin/bash
+  311  cdocker inspect 41169b63c3b0 | grep -i mount
+  312  docker inspect 41169b63c3b0 | grep -i mount
+  313  docker pa -a
+  314  docker run -v /home/ubuntu/archive:/host-home archive:latest /host-home/Install-Packages
+  315  docker pa -a
+  316  docker ps -a
+  317  docker inspect 1f21ffc7c1f0 | grep -i mount
+  318  chown docker archive/
+  319  cat /etc/passwd
+  320  cat /etc/passwd | grep docker 
+  321  docker run -v /home/ubuntu/archive:/host-home archive:latest /host-home/Install-Packages
+  322  ls
+  323  cd archive/
+  324  ls
+  325  docker ps -a
+  326  docker logs 20abada3964a
+  327  ls
+  328  docker run -v /home/ubuntu/archive:/app archive:latest /app/Install-Packages
+  329  docker run -v /home/ubuntu/archive:/app archive:latest  -e /app/Install-Packages
+  330  docker run -v /home/ubuntu/archive:/app -e /app/Install-Packages archive:latest 
+  331  docker run -v /home/ubuntu/archive:/app -e FILE_PATH=/app/Install-Packages archive:latest 
+  332  docker run -v /home/ubuntu/archive:/app -e FILE_PATH=/home/ubuntu/archive/Install-Packages archive:latest 
+  333  docker run -v /home/ubuntu/archive:/app -e FILE_PATH=/home/ubuntu/archive/Install-Packages archive:latest /host-home/Install-Packages
+  334  docker run -v /home/ubuntu/archive:/app -e FILE_PATH=/home/ubuntu/archive/Install-Packages archive:latest /app/Install-Packages
+  335  docker run -v /home/ubuntu/archive:/host-home/archive -e FILE_PATH=/host-home/archive/Install-Packages archive:latest
+  336  docker run -v /home/ubuntu/archive:/app/archive -e FILE_PATH=/app/archive/Install-Packages archive:latest
+  337  ls
+  338  docker run -v /home/ubuntu/archive:/app/archive -e FILE_PATH=/app/archive/Install-Packages archive:latest
+  339  docker run -v /home/ubuntu/archive:/app -e FILE_PATH=/app/archive/Install-Packages archive:latest
+  340  docker run -v /home/ubuntu/archive:/app -e FILE_PATH=/home/ubuntu/archive/Install-Packages archive:latest
+  341  pwd
+  342  docker build -t archive:123 .
+  343  cd 
+  344  docker build -t archive:123 .
+  345  docker run -v /home/ubuntu/archive:/app archive:latest /app/Install-Packages
+  346  ls archive/
+  347  docker run -v /home/ubuntu/archive:/data archive:latest /data/Install-Packages
+  348  ls
+  349  cd archive/
+  350  ls
+  351  docker build -t archive:1234 .
+  352  cd
+  353  docker build -t archive:1234 .
+  354  docker run -v /home/ubuntu/archive:/data archive:1234 /data/Install-Packages
+  355  ls
+  356  ls archive/
+  357  docker ps -a
+  358  docker rm -f $(docker ps -aq)
+  359  docker ps -a
+  360  docker run -v /home/ubuntu/archive:/data archive:1234 /data/Install-Pack
+  361  docker run -v /home/ubuntu/archive:/data archive:1234 /data/Install-Packcage
+  362  docker run -v /home/ubuntu/archive:/data archive:1234 /data/Install-Packages
+  363  docker build -t archive:12 .
+  364  docker run -v /home/ubuntu/archive:/data archive:12 /data/Install-Packages
+  365  ls
+  366  ls archive/
+  367  docker run -v /home/ubuntu/archive:/data archive:12 /data/Install-Packages
+  368  ls archive/
+  369  docker run -v /home/ubuntu/api:/data archive:12 /data/Install-Packages
+  370  docker $(docker ps -a)
+  371  docker $(docker ps -aq)
+  372  docker rm -f  $(docker ps -aq)
+  373  docker images
+  374  docker rmi -f 690504befcf8
+  375  docker rmi -f 678f3511e690
+  376  docker rmi -f 7f70e7f06721
+  377  docker rmi -f 4e2ea9f4b7f3
+  378  docker rmi -f 2f11ed8869b1
+  379  docker images
+  380  docker build -t archive:1 .
+  381  docker images
+  382  docker run -v /home/ubuntu/archive:/data archive:12 /data/Install-Packages
+  383  docker run -v /home/ubuntu/archive:/data archive:1 /data/Install-Packages
+  384  docker run -v /home/ubuntu/api:/data archive:12 /data/Install-Packages
+  385  docker run -v /home/ubuntu/api:/data archive:1 /data/Install-Packages
+  386  ls
+  387  docker run -v /home/ubuntu:/data archive:1 /data/Install-Packages
+  388  ls
+  389  docker run -v /home/ubuntu:/data archive:1 /data/Install-Packages
+  390  ls
+  391  docker ps -a
+  392  docker rm -f $(docker ps -a)
+  393  ls
+  394  docker ps -a
+  395  docker build -t demo .
+  396  docker images
+  397  docker rmi fc68644f262a
+  398  docker build -t demo .
+  399  docker images
+  400  docker build -t demo .
+  401  docker images
+  402  docker rmi 6be7f2a1a882
+  403  docker rmi c8e4bc4d7349
+  404  docker rmi 10ed280be57e
+  405  docker build -t archive .
+  406  docker images
+  407  docker run -v /home/ubuntu:/data archive:1 /data/Install-Packages
+  408  docker run -v /home/ubuntu:/data archive /data/Install-Packages
+  409  ls
+  410  ll
+  411  ls -l
+  412  rm -rf Install-Packages_202504220*
+  413  ls
+  414  kubectl get pods
+  415  kubectl get pods -n employee
+  416  kubectl get svc -n employee
+  417  kubectl delete -f deploymentEmployee.yml 
+  418  kubectl get svc -n employee
+  419  ls
+  420  cd archive
+  421  cd ..
+  422  la
+  423  ls
+  424  docker pull postgres
+  425  docker images
+  426  docker build -t psql .
+  427  docker images
+  428  docker build -t psq1l .
+  429  docker images
+  430  docker build -t psq112 .
+  431  docker images
+  432  docker rmi psq1l
+  433  docker rmi psql
+  434  docker rmi psq112
+  435  docker images
+  436  docker build -t psql .
+  437  docker images
+  438  docker build -t psqlfinal .
+  439  docker run -d -p 5432:5432 --name postgres-container   -e POSTGRES_USER=postgres   -e POSTGRES_PASSWORD=password   -e POSTGRES_DB=mydb   --user aayush   psqlfinal:latest 
+  440  docker run -d -p 5432:5432 --name postgres-container   -e POSTGRES_USER=postgres   -e POSTGRES_PASSWORD=password   -e POSTGRES_DB=mydb   psqlfinal:latest
+  441  docker ps -a
+  442  docker rm -f 6877009936ed
+  443  docker rm -f 5e1325
+  444  docker run -d -p 5432:5432 --name postgres-container   -e POSTGRES_USER=postgres   -e POSTGRES_PASSWORD=password   -e POSTGRES_DB=mydb   psqlfinal:latest
+  445  docker ps -a
+  446  docker logs c4e38
+  447  docker rm -f c4e38
+  448  docker images
+  449  docker run -d -p 5432:5432 --name postgres-container   -e POSTGRES_USER=postgres   -e POSTGRES_PASSWORD=password   -e POSTGRES_DB=mydb   postgres:latest 
+  450  docker ps -a
+  451  docker exec -it postgres-container psql -U postgres -d mydb
+  452  docker exec -it postgres-container /bin/bash
+  453  docker restart postgres-container
+  454  docker exec -it postgres-container /bin/bash
+  455  docker ps -a 
+  456  docker rm -f 7cbec3cee454
+  457  docker exec -it postgres-container psql -U postgres -d attendance_db
+  458  docker run -d -p 5432:5432 --name postgres-container   -e POSTGRES_USER=postgres   -e POSTGRES_PASSWORD=password   -e POSTGRES_DB=attendance_db   
+  459  docker exec -it postgres-container psql -U postgres -d attendance_db
+  460  docker exec -it postgres-container /bin/bash
+  461  docker restart postgres-container
+  462  docker ps -a
+  463  docker commit 914d63deb0fa psql_project_attendance
+  464  docker images
+  465  docker rm -f 914d63deb0fa
+  466  docker run -d -p 5432:5432 --name new-postgres-container psql_project_attendance:latest 
+  467  docker ps -a
+  468  docker exec -it new-postgres-container /bin/bash
+  469  docker exec -it postgres-container psql -U postgres -d attendance_db
+  470  docker exec -it new-postgres-container psql -U postgres -d attendance_db
+  471  docker ps -a
+  472  docker rm -f df845331f64f
+  473  cd api/
+  474  git clone https://github.com/buildpiper-impl-kt/attendance.git
+  475  ls
+  476  cd attendance/
+  477  kubectl apply -f deploymentEmployee.yml 
+  478  kubectl get svc
+  479  kubectl get svc -n employee
+  480  kubectl logs employee-service
+  481  kubectl logs employee-service -n employee
+  482  kubectl get pods
+  483  kubectl get pods -n employee
+  484  kubectl logs employee-6cb469977b-nm2xc -n employee
+  485  kubectl delete -f deploymentEmployee.yml 
+  486  kubectl apply -f deploymentEmployee.yml 
+  487  kubectl get svc -n employee
+  488  kubectl get pods
+  489  kubectl get pods -n employee
+  490  kubectl kogs employee-6cb469977b-lwdcr -n employee
+  491  kubectl logs employee-6cb469977b-lwdcr -n employee
+  492  kubectl delete -f deploymentEmployee.yml 
+  493  cd api/employee/
+  494  tree 
+  495  sudo apt  install tree
+  496  tree 
+  497  cd
+  498  cd api/employee/
+  499  docker build -t employee:v4 .
+  500  sudo apt u`
+  501  sudo apt update
+  502  cd
+  503  histroy 500
+  504  histroy 
+  505  history 
+  506  cd bp-step/
+  507  git clone https://github.com/OT-BUILDPIPER-MARKETPLACE/piramal.git
+  508  rm -rf piramal/
+  509  git clone https://github.com/OT-BUILDPIPER-MARKETPLACE/piramal.git -b BP-Docker-file-creation-step
+  510  cd piramal/
+  511  ls
+  512  pwd
+  513  docker run -v /home/ubuntu/bp-step/piramal:/data archive /home/ubuntu/bp-step/piramal/BP-BASE-SHELL-STEPS
+  514  docker images
+  515  docker build -t archive .
+  516  docker run -v /home/ubuntu/bp-step/piramal:/data archive /home/ubuntu/bp-step/piramal/BP-BASE-SHELL-STEPS
+  517  docker run -v /home/ubuntu/bp-step/piramal:/data archive /data/BP-BASE-SHELL-STEPS
+  518  ls
+  519  rm -rf BP-BASE-SHELL-STEPS_20250423121459.tar.gz 
+  520  docker build -t archive:v2 .
+  521  docker run -v /home/ubuntu/bp-step/piramal:/data archive:v2 /data/BP-BASE-SHELL-STEPS
+  522  ls
+  523  docker run -v /home/ubuntu/bp-step/piramal:/app archive:v2 /app/BP-BASE-SHELL-STEPS
+  524  docker build -t archive:v3 .
+  525  docker run -v /home/ubuntu/bp-step/piramal:/app archive:v2 /app/BP-BASE-SHELL-STEPS
+  526  docker build -t archive:v4 .
+  527  docker run -v /home/ubuntu/bp-step/piramal:/data archive:v4 /data/BP-BASE-SHELL-STEPS
+  528  ls
+  529  rm -rf BP-BASE-SHELL-STEPS_20250423122543.tar.gz 
+  530  docker build -t archive:v5 .
+  531  docker run -v /home/ubuntu/bp-step/piramal:/data archive:v5 /data/BP-BASE-SHELL-STEPS
+  532  docker build -t archive:v6 .
+  533  docker run -v /home/ubuntu/bp-step/piramal:/data archive:v6 /data/BP-BASE-SHELL-STEPS
+  534  docker images
+  535  docker rmi -f 5d8b836896e1
+  536  docker rmi -f 929005e943fe
+  537  docker rmi -f d057eb7babd2
+  538  docker rmi -f 217fb4f5709a
+  539  docker rmi -f 9dc9c8e23b0f
+  540  docker build -t archive:v2 .
+  541  docker run -v /home/ubuntu/bp-step/piramal:/data archive:v6 /data/BP-BASE-SHELL-STEPS
+  542  docker build -t archive:v3 .
+  543  docker run -v /home/ubuntu/bp-step/piramal:/data archive:v3 /data/BP-BASE-SHELL-STEPS
+  544  ls
+  545  docker ps -a
+  546  docker rm -f (docker ps -aq)
+  547  docker rm -f $(docker ps -aq)
+  548  docker ps -a
+  549  cd .
+  550  cd 
+  551  kubectl get nodes
+  552  kubectl get ns
+  553  ls
+  554  docker images
+  555  docker rmi b318e88ea0fb
+  556  docker rmi 
+  557  docker rmi a25ed6ae5c3c
+  558  docker rmi fc68644f262a
+  559  docker rmi ff49abb9855df
+  560  docker rmi f49abb9855df
+  561  docker images
+  562  docker rmi 5d8b836896e1
+  563  docker rmi -f 5d8b836896e1
+  564  docker images
+  565  docker ps -a
+  566  cd bp-step/
+  567  ls
+  568  cd piramal/
+  569  ls
+  570  rm -rf *.tar
+  571  ls
+  572  rm -rf *.tar.*
+  573  ls
+  574  docker build -t archive .
+  575  docker run -v /home/ubuntu/bp-step/piramal:/data archive:latest /data/BP-BASE-SHELL-STEPS
+  576  ls
+  577  docker images
+  578  history 
+  579  docker run -v /home/ubuntu/bp-step/piramal:/data archive:v3 /data/BP-BASE-SHELL-STEPS
+  580  docker run -v /home/ubuntu/bp-step/piramal:/data archive /data/BP-BASE-SHELL-STEPS
+  581  ls
+  582  docker images
+  583  docker ps -a
+  584  docker logs 8f319751fcc2
+  585  docker build -t archive:v1 .
+  586  docker run -v /home/ubuntu/bp-step/piramal:/data archive:v1 /data/BP-BASE-SHELL-STEPS
+  587  ls
+  588  docker run -v /home/ubuntu/bp-step/pirama:/data archive:v1 /data/BP-BASE-SHELL-STEPS
+  589  docker build -t archive:v2 .
+  590  docker run -v /home/ubuntu/bp-step/pirama:/data archive:v1 /data/BP-BASE-SHELL-STEPS
+  591  ls
+  592  docker run -v /home/ubuntu/bp-step/pirama:/data archive:v2 /data/BP-BASE-SHELL-STEPS
+  593  ls
+  594  docker run -v /home/ubuntu/bp-step/piramal:/data archive:v2 /data/BP-BASE-SHELL-STEPS
+  595  docker images
+  596  docker rmi -f 46554e8968f9
+  597  docker rmi -f 32b9d
+  598  docker images
+  599  docker build -t archive:v1 .
+  600  docker images
+  601  docker rmi -f 9dc9c
+  602  docker images
+  603  docker build -t archive:v1 .
+  604  docker run -v /home/ubuntu/bp-step/pirama:/data archive:v1 /data/BP-BASE-SHELL-STEPS
+  605  docker run -v /home/ubuntu/bp-step/piramal:/data archive:v1 /data/BP-BASE-SHELL-STEPS
+  606  ls
+  607  docker imags
+  608  docker images
+  609  cd bp-step/pirama
+  610  ls
+  611  cd ..
+  612  rm -rf pirama
+  613  cd piramal/
+  614  ls
+  615  docker build -t archive:v55 .
+  616  docker run -v /home/ubuntu/bp-step/pirama:/data archive:v1 /data/BP-BASE-SHELL-STEPS
+  617  docker run -v /home/ubuntu/bp-step/piramal:/data archive:v1 /data/BP-BASE-SHELL-STEPS
+  618  docker run -v /home/ubuntu/bp-step/piramal:/data archive:v55 /data/BP-BASE-SHELL-STEPS
+  619  ls
+  620  docker run -v /home/ubuntu/bp-step/piramal:/data archive:v55 /data/BP-BASE-SHELL-STEPS
+  621  ls
+  622  rm -rf *.tar*
+  623  ls
+  624  docker run -v /home/ubuntu/bp-step/piramal:/data archive:v55 /data/BP-BASE-SHELL-STEPS
+  625  ls
+  626  rm -rf *.tar.*
+  627  ls
+  628  cd api/employee/
+  629  tree
+  630  cd bp-step/piramal/
+  631  ls
+  632  docker images
+  633  docker run -v /home/ubuntu/bp-step/piramal:/data archive:v55 /data/BP-BASE-SHELL-STEPS
+  634  ls
+  635  docker images
+  636  sudo apt update
+  637  sudo reboot
+  638  sudo apt update
+  639  ls -l
+  640  ls -al
+  641  sudo apt updayte
+  642  sudo apt update
+  643  docker pull scylladb/scylla
+  644  docker run scylladb/scylla:latest 
+  645  docker ps -a
+  646  docker rm -f $(docker ps -aq)
+  647  docker run -d  scylladb/scylla:latest 
+  648  docker ps -a
+  649  docker exec -it wizardly_hamilton cqlsh
+  650  docker exec -it wizardly_hamilton bash
+  651  docker run -d scylladb/scylla:latest -e SCYLLA_ARGS="--authenticator PasswordAuthenticator --authorizer CassandraAuthorizer"   --rpc-address 0.0.0.0  --name check
+  652  docker ps -a
+  653  docker exec -it check bash
+  654  docker exec -it practical_hypatia bash
+  655  docker ps -a
+  656  docker inspect 52128018fee5
+  657  docker -it 52128018fee5 bash
+  658  docker exec -it 52128018fee5 bash
+  659  docker ps -a 
+  660  docker inspect 0df005452b10
+  661  docker inspect scylla-test
+  662  cqlsh 127.0.0.1 -u scylladb -p password
+  663  docker run --name scylla-test -d -p 9042:9042 scylladb/scylla
+  664  docker logs scylla-test
+  665  docker exec -it scylla-test cqlsh 127.0.0.1 -u scylladb -p password
+  666  docker logs scylla-test
+  667  docker exec -it scylla-test cqlsh
+  668  docker ps -a 
+  669  docker rm -f $(docker ps -a)
+  670  docker ps -a 
+  671  docker run -d scylladb/scylla:latest -e SCYLLA_ARGS="--authenticator PasswordAuthenticator --authorizer CassandraAuthorizer"   --rpc-address 0.0.0.0  --name check
+  672  docker exec -it 0df00 bash
+  673  docker restart 0df005452b10
+  674  docker exec -it 0df00 bash
+  675  docker restart 0df005452b10
+  676  docker exec -it 0df00 bash
+  677  docker exec -itodfoo545 cqlsh
+  678  docker exec -itodfoo545 cqlsh 172.17.0.2 -u cassandra -p cassandra
+  679  docker exec -it 0df00545 cqlsh 172.17.0.2 -u cassandra -p cassandra
+  680  docker exec -it 0df00545 cqlsh 
+  681  docker logs 0df00545
+  682  docker exec -it 0df00545 cqlsh 127.0.0.1 -u scylladb -p password
+  683  docker logs 0df00545
+  684  docker ps -a
+  685  docker ps -a
+  686  docker exec 0df005452b10 bash
+  687  docker exec -it 0df005452b10 bash
+  688  docker exec -it 0df005452b10 nodetool status
+  689  Datacenter: datacenter1
+  690  docker exec -it 0df00545 cqlsh 172.17.0.3 -u scylladb -p password
+  691  docker inspect 0df00545
+  692  docker exec -it 0df00545 cqlsh 127.0.0.1 -u scylladb -p password
+  693  docker exec -it 0df00545 cqlsh
+  694  docker ps -a
+  695  docker inspact aec09d212f21
+  696  docker inspect aec09d212f21
+  697  docker exec -it 0df00545 cqlsh 172.17.0.3 -u scylladb -p password
+  698  history 
+  699  docker exec -it 0df00545 cqlsh 172.17.0.3 -u scylladb -p password
+  700  docker ps -a
+  701  docker exec -it 0df005452b10 bash
+  702  docker inspect 0df005452b10 
+  703  docke ps -a
+  704  docker ps -a
+  705  dockr inspect 657d0bce9b3b
+  706  docker inspect 657d0bce9b3b
+  707  cd bp-step/
+  708  ls
+  709  git status
+  710  docker rmi 2caabc6de8b9
+  711  docker rmi 92900
+  712  docker images
+  713  docker ps -a
+  714  docker exec -it 0df00545 cqlsh 172.17.0.3 -u scylladb -p password
+  715  docker run -d scylladb/scylla:latest -name scylla-chek -e SCYLLA_ARGS="--authenticator PasswordAuthenticator --authorizer CassandraAuthorizer" 
+  716  docker exec -it 657d0bce9b3 bash
+  717  docker exec -it 657d0bce9b3 cqlsh
+  718  docker exec -it 657d0bce9b3 bash
+  719  docker restart 657d0bce9b3
+  720  docker exec -it 0df00545 cqlsh 172.17.0.4 -u scylladb -p password
+  721  docker exec -it 0df00545 cqlsh 172.17.0.3 -u scylladb -p password
+  722  docker exec -it 657d0bce9b3 bash
+  723  docker ps -a
+  724  docker rm -f $(docker ps -a)
+  725  docker ps -a\
+  726  docker ps -a
+  727  docker images
+  728  docker ps -a\
+  729  docker run -d --name scylla   -p 9042:9042   -p 10000:10000   scylladb/scylla   --authenticator PasswordAuthenticator   --authorizer CassandraAuthorizer   --broadcast-address 10.0.7.120   --listen-address 0.0.0.0   --rpc-address 0.0.0.0
+  730  docker ps -a
+  731  docker exec -it f848b8282a51 bash
+  732  docker run -d scylladb/scylla:latest --name scylla -e SCYLLA_ARGS="--authenticator PasswordAuthenticator --authorizer CassandraAuthorizer" --rpc-address 0.0.0.0
+  733  docker exec -it ffb019932db bash
+  734  docker run -it ffb019932db4 cqlsh 172.17.0.3 -u scylladb -p password
+  735  docker run -it ffb019932db4 cqlsh 172.17.0.2 -u scylladb -p password
+  736  docker exec -it ffb019932db4 cqlsh 172.17.0.2 -u scylladb -p password
+  737  docker exec -it ffb019932db4 cqlsh 172.17.0.3 -u scylladb -p password
+  738  docker exec -it ffb019932db4 cqlsh 172.17.0.1 -u scylladb -p password
+  739  docker exec -it ffb019932db bash
+  740  docker exec -it ffb019932db4 cqlsh 172.17.0.1 -u scylladb -p password
+  741  cqlsh 127.0.0.1 -u scylladb -p password
+  742  docker exec -it ffb019932db4 cqlsh 127.0.0.1 -u scylladb -p password
+  743  docker exec -it ffb019932db4 cqlsh 10.0.7.120 -u scylladb -p password
+  744  docker exec -it ffb019932db bash
+  745  docker ps -a
+  746  docker inspect ffb019932db4
+  747  docker restart ffb019932db4
+  748  sudo reboot
+  749  sudo apt update
+  750  docker ps -a
+  751  docker 
+  752  docker exce -it f848b8282a51 cqlsh
+  753  docker exec -it f848b8282a51 cqlsh
+  754  docker ps -a
+  755  docker rm -f $(
+  756  docker ps -aq)
+  757  docker build -t employee:03 -f /home/ubuntu/api/employee/Dockerfile employee-api
+  758  docker build -t employee:03 -f /home/ubuntu/api/employee/Dockerfile employee
+  759  tree
+  760  docker build -t employee:03 -f /home/ubuntu/api/employee/Dockerfile employee
+  761  cd api/employee/
+  762  tree
+  763  docker build -t employee:03 .
+  764  cd 
+  765  docker run -dt -p 8080:8080 employee:03
+  766  docker ps -a
+  767  docker rm -f 4a68e8cab0fd
+  768  docker run -dt --name employee --network employee_network -p 8080:8080 employee:03
+  769  docker ps -a
+  770  docker logs employee 
+  771  git clone https://github.com/OT-MICROSERVICES/employee-api.git
+  772  docker rm -f 4a68e8cab0fd
+  773  docker ps -a
+  774  docker rm -f b2f53
+  775  docker rmi -f employee:03
+  776  cd api/employee/
+  777  docker build -t employee:03 .
+  778  docker run -dt --name employee --network employee_network -p 8080:8080 employee:03
+  779  docker ispect 5395b63ba
+  780  docker inspect 5395b63ba
+  781  cd
+  782  cd employee-api/
+  783  ls
+  784  docker build -t employee:44 .
+  785  docker run -dt --name employee --network employee_network -p 8080:8080 employee:44
+  786  docker inspect 34d24b0
+  787  dockerlog  34d24b0
+  788  docker logs 34d24b0
+  789  docker rm -f 34d24b0
+  790  docker images
+  791  docker rmi employee:44
+  792  ls
+  793  docker build -t employee:44 .
+  794  docker run -dt --name employee --network employee_network -p 8080:8080 employee:44
+  795  docker logs 42970b29192c 
+  796  docker exec -it 4297 ls -l /app/config.yaml
+  797  docker build -t employee:45 .
+  798  docker ps -a
+  799  docker rm -f 42970b29
+  800  docker run -dt --name employee --network employee_network -p 8080:8080 employee:45
+  801  docker exec -it 5336b764
+  802  docker exec -it 5336b764 bash
+  803* docker ps 
+  804  docker exec -it 5336b764 sh
+  805  docker build -t employee:46 .
+  806  docker rm -f 5336b764
+  807  docker run -dt --name employee --network employee_network -p 8080:8080 employee:46
+  808  docker ps -a
+  809  docker exec -it 06a8e84e4 bash
+  810  docker run -dt --name employee --network employee_network -p 8080:8080 employee:47
+  811  docker build -t employee:48 .
+  812  docker run -dt --name employee --network employee_network -p 8080:8080 employee:48
+  813  docker build -t employee:50 .
+  814  docker run -dt --name employee --network employee_network -p 8080:8080 employee:50
+  815  docker build -t employee:51 .
+  816  docker run -dt --name employee --network employee_network -p 8080:8080 employee:51
+  817  docker logs 5c3663b
+  818  docker ps -a
+  819  docker images
+  820  docker rm -f 5c3663b7727c
+  821  docker rmi 16954fbe5ed9
+  822  docker rmi 9585
+  823  docker rmi 9485
+  824  docker rmi dd7a
+  825  docker rmi fb78
+  826  docker rmi a956
+  827  docker build -t employee:52 .
+  828  docker images
+  829  docker run -dt --name employee --network employee_network -p 8080:8080 employee:52
+  830  docker logs 2ccee
+  831  docker rm -f 2ccee
+  832  docker rmi employee:52
+  833  docker build -t employee:53 .
+  834  docker run -dt --name employee --network employee_network -p 8080:8080 employee:53
+  835  docker logs 4d7409
+  836  $ docker run --name some-redis --network employee_network -d redis
+  837  docker pull redis
+  838  $ docker run --name some-redis --network employee_network -d redis
+  839  docker run --name some-redis --network employee_network -d redis
+  840  docker rm -f aa7198
+  841  docker run --name some-redis --network employee_network --hostname some-redis -d redis
+  842  history 
+  843  docker exec -it c78b9 nodetool status
+  844  docker exec -itc78b9 nodetool status
+  845  docker exec -it c78b9 nodetool status
+  846  docker inspect c78b9
+  847  docker exec -it some-redis bash
+  848  docker restart some-redis 
+  849  ls
+  850  docker build -t employee:54 .
+  851  docker rmi employee:54
+  852  docker build -t employee:54 .
+  853  docker run -dt --name employee --network employee_network -p 8080:8080 employee:54
+  854  docker ps -a
+  855  docker rm -f 4d74098aff38
+  856  docker run -dt --name employee --network employee_network -p 8080:8080 employee:54
+  857  docker logs 6eac
+  858  history > history.txt
