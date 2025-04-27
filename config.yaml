@@ -1,12 +1,12 @@
 scylladb:
   host: 
-    - some-scylla:9042
+    - some-scylla.database.svc.cluster.local:9042  #some-scylla:9042 for docker
   username: scylladb
   password: password
   keyspace: employee_db
 
 redis:
   enabled: false
-  host: some-redis:6379
+  host: some-redis.database.svc.cluster.local:6379
   password: password
   database: 0
